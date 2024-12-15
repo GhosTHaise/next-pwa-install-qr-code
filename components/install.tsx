@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import Qr from './qrcode';
 
 export default function InstallButton() {
-    const [deferredPrompt, setDeferredPrompt] = useState(null);
+    const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
 
     useEffect(() => {
         const handler = (e : any) => {

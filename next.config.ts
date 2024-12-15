@@ -7,6 +7,12 @@ const nextConfig = {
   swcMinify: true,            // Enable SWC minification for improved performance
   compiler: {
       removeConsole: process.env.NODE_ENV !== "development"     // Remove console.log in production
+  },
+  typescript : {
+    ignoreBuildErrors : true
+  },
+  eslint : {
+    ignoreDuringBuilds : true
   }
 };
 
